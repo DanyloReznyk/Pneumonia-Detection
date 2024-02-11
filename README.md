@@ -13,7 +13,7 @@ This repository contains a project on image detection and semantic segmentation 
 - **Scoring function:** Mean IoU and Accuracy
 
 ### How to run:
-The inference.py file takes as an argument the path to the directory with RGB images:  
+The inference.py file takes as an argument the path to the directory with RGB images: 
 The code is run according to the following example:
 python inference.py "DIRECTORY_TO_RGBIMAGES" or python inference.py input\stage_2_test_images
 
