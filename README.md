@@ -40,20 +40,14 @@ It is important to note that we reduced the image to 128 pixels, although this d
 After predicting the test result, the expected masks were converted into 128*128*1 format and then, using the skimage method, pixels were found which, combined together, form a box that is a mask. At the same time, a certain post-processing is performed - all masks that are too small are discarded, only from 25,000 thousand pixels, and each mask is also reduced by 5 percent - this is explained by the fact that the model tends to slightly exaggerate the mask and draw small masks in unexpected places.
 
 #### Model training history
-<img src="results\f1-score.jpg"/>
-<img src="results\loss.jpg"/>
+<img src="results\model1.jpg"/>
+<img src="results\model2.jpg"/>
+<img src="results\model3.jpg"/>
+<img src="results\model4.jpg"/>
 
-#### Model evaluation
-<img src="results\eval.jpg"/>
 
 #### Prediction vs ground truth
-<img src="results\validation\a8af12f5b.jpg"/>
-<img src="results\validation\e5cb861f3.jpg"/>
-
-#### Inference example
-<img src="results\inference\3d75a5157.jpg"/>
-<img src="results\inference\582ed5b82.jpg"/>
-<img src="results\inference\d6cf01e6f.jpg"/>
+<img src="results\comparing.jpg"/>
 
 ### Project Structure:
 ```bash
@@ -68,8 +62,6 @@ After predicting the test result, the expected masks were converted into 128*128
 ├───metrics.py # Metrics are used in training
 └───requirements.txt
 ```
-### Kaggle Notebook
-Used it to run all model training <a href='https://www.kaggle.com/jeniagerasimov/airbus-semantic-segmantation'>View</a>
 
 ### Conclusion:
 Project was very challenging as I had 0 previous experience with neural networks and keras, but it was very fun nonetheless.
