@@ -15,7 +15,7 @@ This repository contains a project on image detection and semantic segmentation 
 ### How to run:
 The inference.py file takes as an argument the path to the directory with RGB images: 
 The code is run according to the following example:
-python inference.py "DIRECTORY_TO_RGBIMAGES" or python inference.py input\stage_2_test_images
+python inference.py "DIRECTORY_TO_RGBIMAGES" or python inference.py DIRECTORY_TO_RGBIMAGES
 
 After that, thanks to the download_model function, model weights are downloaded to the checkpoints directory. Then, thanks to the load_model function, pretrained models are loaded.
 
