@@ -35,9 +35,9 @@ The third is U-net with VGG19 as backbone together with spatial attention for en
 The Fourth is ASPP model with ResNet152 as encoder.
 
 Training was performed on 4800 images, which were stratified by class, and validation was performed on 1200 images. The batch size was 16 for training and 32 for validation, the learning rate was the same everywhere in 0.0001, the optimizer was adam. The following loss function was used: it is the weighted sum of IoU and binary crossentropy.
-It is important to note that we reduced the image to 128 pixels, although this did not have ultra-high accuracy, but it gave speed, the number of channels - 3. The masks were transformed into a categorical array that stores a binary vector with a size of 2*1 for each pixel.
+It is important to note that we reduced the image to 128 pixels, although this did not have ultra-high accuracy, but it gave speed, the number of channels - 3. The masks were transformed into a categorical array that stores a binary vector with a size of 2х1 for each pixel.
 
-After predicting the test result, the expected masks were converted into 128*128*1 format and then, using the skimage method, pixels were found which, combined together, form a box that is a mask. At the same time, a certain post-processing is performed - all masks that are too small are discarded, only from 25,000 thousand pixels, and each mask is also reduced by 5 percent - this is explained by the fact that the model tends to slightly exaggerate the mask and draw small masks in unexpected places.
+After predicting the test result, the expected masks were converted into 128х128х1 format and then, using the skimage method, pixels were found which, combined together, form a box that is a mask. At the same time, a certain post-processing is performed - all masks that are too small are discarded, only from 25,000 thousand pixels, and each mask is also reduced by 5 percent - this is explained by the fact that the model tends to slightly exaggerate the mask and draw small masks in unexpected places.
 
 #### Model training history
 <img src="results\model1.jpg"/>
