@@ -62,6 +62,3 @@ After predicting the test result, the expected masks were converted into 128х12
 ├───metrics.py # Metrics are used in training
 └───requirements.txt
 ```
-
-### Conclusion:
-Project was very challenging as I had 0 previous experience with neural networks and keras, but it was very fun nonetheless.
